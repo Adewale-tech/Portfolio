@@ -5,6 +5,10 @@ import { certifications } from '../data';
 const Certifications: React.FC = () => {
   const cert = certifications[0]; // Assuming one certificate for now
 
+  if (!cert) {
+    return null;
+  }
+
   return (
     <section id="certifications" className="py-24">
       <h2 className="flex items-center text-2xl md:text-3xl font-bold text-lightest-slate dark:text-white mb-8">

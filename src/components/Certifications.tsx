@@ -1,8 +1,13 @@
+
 import React from 'react';
 import { certifications } from '../data';
 
 const Certifications: React.FC = () => {
   const cert = certifications[0]; // Assuming one certificate for now
+
+  if (!cert) {
+    return null;
+  }
 
   return (
     <section id="certifications" className="py-24">
