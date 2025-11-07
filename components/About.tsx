@@ -22,7 +22,7 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 rounded-md overflow-hidden z-10">
                     <img 
                         src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop" 
-                        alt="Waliyullah Osman"
+                        alt="Waliyullah Osman Adewale"
                         className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
                     />
                     <div className="absolute inset-0 bg-navy/50 dark:bg-navy/30 group-hover:bg-transparent transition-all duration-300"></div>

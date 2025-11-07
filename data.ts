@@ -76,7 +76,7 @@ export const experiences: Experience[] = [
     {
         role: "Backend Engineering Graduate",
         company: "ALX Software Engineering Program",
-        period: "Jan 2025 - Present",
+        period: "Jan 2025 - Sep 2025",
         location: "Remote",
         description: [
             "Developed modular REST APIs with authentication and ORM, which enhanced data security and functionality.",
