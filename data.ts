@@ -5,7 +5,7 @@ export const personalInfo = {
   tagline: "Backend Developer building scalable systems with purpose.",
   email: "waliyullahadewale30@gmail.com",
   linkedin: "https://www.linkedin.com/in/waliyullah-osman-7b84b0311",
-  github: "https://github.com/Waliyullah-Osman", // Placeholder, replace with actual GitHub URL
+  github: "https://github.com/Adewale-tech", // Placeholder, replace with actual GitHub URL
 };
 
 export const aboutMe = {
