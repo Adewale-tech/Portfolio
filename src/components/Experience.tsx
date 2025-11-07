@@ -1,9 +1,19 @@
+
 import React, { useState } from 'react';
 import { experiences, education } from '../data';
 import { Experience as ExperienceType } from '../types';
 
 const Experience: React.FC = () => {
-  const [activeTab, setActiveTab] = useState(experiences[0].company);
+  const getInitialTab = () => {
+    if (experiences && experiences.length > 0) {
+      return experiences[0].company;
+    }
+    if (education && education.length > 0) {
+      return education[0].institution;
+    }
+    return '';
+  };
+  const [activeTab, setActiveTab] = useState(getInitialTab());
 
   const allTabs = [...experiences.map(e => e.company), ...education.map(e => e.institution)];
   const activeExperience = experiences.find(e => e.company === activeTab);
