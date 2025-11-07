@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { experiences, education } from '../data';
-import { Experience as ExperienceType } from '../types';
+import type { Experience as ExperienceType } from '../types';
 
 const Experience: React.FC = () => {
   const getInitialTab = () => {
