@@ -1,7 +1,7 @@
 import { Project, SkillCategory, Experience, Education, Certificate } from './types';
 
 export const personalInfo = {
-  name: "Waliyullah Osman",
+  name: "Waliyullah Osman Adewale",
   tagline: "Backend Developer building scalable systems with purpose.",
   email: "waliyullahadewale30@gmail.com",
   linkedin: "https://www.linkedin.com/in/waliyullah-osman-7b84b0311",
