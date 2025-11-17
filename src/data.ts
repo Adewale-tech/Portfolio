@@ -16,6 +16,21 @@ export const aboutMe = {
 
 export const projects: Project[] = [
   {
+    title: "Distributed Notification System (HNG Internship)",
+    description: "Microservices-based notification platform using RabbitMQ for asynchronous email and push delivery. Implemented message routing, retries with dead-letter queues, and template rendering across dedicated user, template, email, and push services. Added Dockerized deployment, CI/CD automation, and health checks for reliability and scale.",
+    tags: [
+      "Python",
+      "REST APIs",
+      "RabbitMQ",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Microservices",
+      "CI/CD"
+    ],
+    repoUrl: "https://github.com/Adewale-tech/template_service.git" // TODO: add repository URL if public
+  },
+  {
     title: "Country Currency & Exchange API",
     description: "A robust RESTful API that fetches and caches country and currency exchange data from external sources. It provides full CRUD operations, advanced filtering/sorting, and dynamically generates a summary image. Built to handle external API failures gracefully and ensure data integrity through validation.",
     tags: ["Python", "Django", "REST API", "MySQL", "Data Caching", "API Integration", "Image Generation", "Error Handling"],
