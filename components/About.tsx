@@ -21,9 +21,9 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 bg-green rounded-md z-0 transform translate-x-4 translate-y-4 transition-transform duration-300 group-hover:translate-x-3 group-hover:translate-y-3"></div>
                 <div className="absolute inset-0 rounded-md overflow-hidden z-10">
                     <img 
-                        src="https://media.licdn.com/dms/image/v2/D5603AQHAClBz9fhwog/profile-displayphoto-scale_200_200/B56ZohgoqdJQAY-/0/1761498797237?e=1764806400&v=beta&t=l5O-jkghiKCwrM0FbPrh0TxslE052Dn2d4dUhjXe4Js"
-                        alt="Waliyullah Osman Adewale"
-                        className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                      src="https://media.licdn.com/dms/image/v2/D5603AQFsOpJeoAWhkg/profile-displayphoto-scale_200_200/B56ZqSrq_lI4Ac-/0/1763397520919?e=1764806400&v=beta&t=UPLigHW-dszaHI7jU8cgtZ2etXyJ3eyRCT6q7efv88E"
+                      alt="Waliyullah Osman Adewale"
+                      className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
                     />
                     <div className="absolute inset-0 bg-navy/50 dark:bg-navy/30 group-hover:bg-transparent transition-all duration-300"></div>
                 </div>
