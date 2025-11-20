@@ -2,26 +2,43 @@
 import React, { useState } from 'react';
 import { experiences, education } from '../data';
 
+interface DisplayItem {
+  role: string;
+  period: string;
+  location: string;
+  description?: string[];
+}
+
+const getInitialTab = () => {
+  if (experiences.length > 0) return experiences[0].company;
+  if (education.length > 0) return education[0].institution;
+  return '';
+};
+
 const Experience: React.FC = () => {
-  const getInitialTab = () => {
-    if (experiences && experiences.length > 0) {
-      return experiences[0].company;
-    }
-    if (education && education.length > 0) {
-      return education[0].institution;
-    }
-    return '';
-  };
   const [activeTab, setActiveTab] = useState(getInitialTab());
 
-  const allTabs = [...experiences.map(e => e.company), ...education.map(e => e.institution)];
+  const allTabs = [
+    ...experiences.map(e => e.company),
+    ...education.map(e => e.institution)
+  ];
+
   const activeExperience = experiences.find(e => e.company === activeTab);
   const activeEducation = education.find(e => e.institution === activeTab);
-  
-  const activeItem: { role: string; period: string; description?: string[]; location: string; } | undefined = activeExperience
-    ? { role: activeExperience.role, period: activeExperience.period, description: activeExperience.description, location: activeExperience.location }
+
+  const activeItem: DisplayItem | undefined = activeExperience
+    ? {
+        role: activeExperience.role,
+        period: activeExperience.period,
+        location: activeExperience.location,
+        description: activeExperience.description
+      }
     : activeEducation
-    ? { role: activeEducation.degree, period: activeEducation.period, location: activeEducation.location }
+    ? {
+        role: activeEducation.degree,
+        period: activeEducation.period,
+        location: activeEducation.location
+      }
     : undefined;
 
   return (
@@ -49,22 +66,22 @@ const Experience: React.FC = () => {
         </div>
         <div className="flex-1">
           {activeItem && (
-             <div>
-                <h3 className="text-xl font-bold text-lightest-slate dark:text-white">
-                    {activeItem.role}
-                </h3>
-                <p className="font-mono text-sm text-slate dark:text-slate mb-4">{activeItem.period} • {activeItem.location}</p>
-                {activeItem.description && (
-                    <ul className="space-y-2">
-                    {activeItem.description.map((point, i) => (
-                        <li key={i} className="flex items-start">
-                        <span className="text-green mr-4 mt-1">&#9655;</span>
-                        <span className="text-slate dark:text-light-slate">{point}</span>
-                        </li>
-                    ))}
-                    </ul>
-                )}
-             </div>
+            <div>
+              <h3 className="text-xl font-bold text-lightest-slate dark:text-white">{activeItem.role}</h3>
+              <p className="font-mono text-sm text-slate dark:text-slate mb-4">
+                {activeItem.period} • {activeItem.location}
+              </p>
+              {activeItem.description && (
+                <ul className="space-y-2">
+                  {activeItem.description.map((point, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-green mr-4 mt-1">&#9655;</span>
+                      <span className="text-slate dark:text-light-slate">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           )}
         </div>
       </div>
