@@ -6,11 +6,11 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 text-center max-w-2xl mx-auto">
       <h2 className="font-mono text-green text-lg mb-2">06. What's Next?</h2>
-      <h3 className="text-4xl md:text-5xl font-bold text-lightest-slate dark:text-white mb-4">Get In Touch</h3>
+      <h3 className="text-4xl md:text-5xl font-bold text-lightest-slate dark:text-white mb-4">Let's Build Something Great</h3>
       <p className="text-slate dark:text-light-slate mb-8">
-        I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open. I’ll get back to you as soon as I can!
+        I'm actively seeking roles where I can drive impact through backend engineering. Whether you're building the next big thing or scaling existing systems, I'd love to hear about it. Let's connect.
       </p>
-      <a 
+      <a
         href={`mailto:${personalInfo.email}`}
         className="inline-block font-mono text-green border border-green rounded px-8 py-4 hover:bg-green/10 transition-colors duration-300"
       >

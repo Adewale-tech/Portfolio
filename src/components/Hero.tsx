@@ -9,13 +9,13 @@ const Hero: React.FC = () => {
         {personalInfo.name}.
       </h2>
       <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate dark:text-light-slate mb-8">
-        I craft scalable backend solutions.
+        I engineer systems that scale.
       </h3>
       <p className="max-w-xl text-slate dark:text-slate mb-12">
-        I'm a backend developer specializing in building secure and scalable systems. My focus is on crafting robust APIs and optimizing application performance to deliver reliable and efficient digital experiences.
+        Software Engineer focused on building production-grade backend systems, distributed architectures, and APIs that power modern applications. I turn complex requirements into reliable, scalable solutions.
       </p>
       <div>
-        <a 
+        <a
           href={`mailto:${personalInfo.email}`}
           className="inline-block font-mono text-green border border-green rounded px-8 py-4 hover:bg-green/10 transition-colors duration-300"
         >
